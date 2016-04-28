@@ -16,3 +16,31 @@ Reminder:
 	R - read
 	U - update
 	D - delete
+
+
+AddressBook the main component.
+AddEntry is a form component?
+Contact is a component.
+
+    isBusiness = Boolean
+
+    Properties of Entry:
+
+    Company Name (if type = Company)
+    First Name
+    Last Name
+    Email
+    Phone Number
+    Address1
+    Address2
+    City
+    State
+    Zip
+    skype
+    linkedIn
+    twitter
+    facebook
+    hangouts
+    ImgURL
+
+

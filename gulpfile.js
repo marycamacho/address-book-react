@@ -20,7 +20,13 @@ gulp.task(
 	['clean'],
 	function() {
 		return gulp
-			.src('./source/**/*.html')
+			.src([
+				'./source/**/*.html',
+				'./source/js',
+				'./source/jsx',
+				'./source/css',
+				'/source/img'
+				])
 			.pipe(gulp.dest('./build/'))
 	}
 );
@@ -29,7 +35,7 @@ gulp.task(
 	'javascript',
 	['clean'],
 	function () {
-		return browserify('./source/app.js', {debug: true})
+		return browserify('./source/app.jsx', {debug: true})
 			.transform(babelify, {presets: ["react"]})
 			.bundle()
 			.pipe(source('app.compiled.js'))
