@@ -1,9 +1,10 @@
 {
-  "name": "react-test",
+  "name": "address-book-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "This weekend, create an ADDRESS BOOK using the techniques we learned today. This is a very open-ended assignment, use whatever techniques you feel you need practice on to complete the requirements.",
   "main": "index.js",
   "dependencies": {
+    "lodash": "^4.11.1",
     "react": "^15.0.1",
     "react-dom": "^15.0.1"
   },
@@ -12,6 +13,7 @@
     "babelify": "^7.3.0",
     "browserify": "^13.0.0",
     "del": "^2.2.0",
+    "graceful-fs": "^4.1.3",
     "gulp": "^3.9.1",
     "gulp-watch": "^4.3.5",
     "vinyl-source-stream": "^1.1.0"
@@ -20,5 +22,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marycamacho/address-book-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marycamacho/address-book-react/issues"
+  },
+  "homepage": "https://github.com/marycamacho/address-book-react#readme"
 }
