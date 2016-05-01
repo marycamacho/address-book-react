@@ -1,5 +1,4 @@
 var gulp = require("gulp");
-
 var browserify = require('browserify');
 var babelify = require('babelify');
 var source = require('vinyl-source-stream');
@@ -23,9 +22,9 @@ gulp.task(
 			.src([
 				'./source/**/*.html',
 				'./source/js',
-				'./source/jsx',
-				'./source/css',
-				'/source/img'
+				'./source/**/*.jsx',
+				'./source/**/*.css',
+				'/source/**.*.img'
 				])
 			.pipe(gulp.dest('./build/'))
 	}

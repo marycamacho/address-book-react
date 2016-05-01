@@ -1,0 +1,93 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    border: thin solid #2f4f4f;
+    cursor: pointer;
+}
+
+header {
+    background: #353859;
+    height: 70px;
+}
+
+header h1 {
+    padding-top: 20px;
+    font-family: 'Expletus Sans', cursive;
+    color: #f5f5f5;
+    margin-top: 0;
+    font-size: 250%;
+}
+
+.headerBtns {
+    margin-top: -30px;
+    padding-right: 25px;
+}
+
+.fa-refresh {
+    color: #f5f5f5;
+    font-size: 120%;
+    float: right;
+}
+
+footer {
+    background: #353859;
+    height: 60px;
+}
+
+.prettyBG {
+    background: url('../img/colorbg.png')no-repeat center!important;
+    background-size: cover!important;
+    height: 90%;
+}
+
+ul {
+    list-style: none;
+}
+
+.well{
+    padding:20px 30px;
+}
+
+.whiteBG {
+    background-color: white;
+}
+
+.top_40 {
+    margin-top: 40px;
+}
+
+.double {
+    background: url('../img/double.png') no-repeat center;
+}
+
+.single {
+    background: url('../img/single.png') no-repeat center;
+}
+
+.contact-list {
+    padding-left: 0;
+}
+.contact-short {
+    height: 75px;
+}
+
+
+.contact-short-name {
+    margin-left: 10px;
+    float: left;
+}
+
+.contact-short-thumb {
+    width: 50px;
+    height: 50px;
+    align: left;
+    float: left;
+}
+
+#contact-submit-button {
+    float: right;
+}
