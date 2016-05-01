@@ -4,4 +4,4 @@ var AddressBook = require('./jsx/address_book.jsx');
 
 
 
-ReactDom.render(<div></div>, document.getElementById('app'));
+ReactDom.render(<div>Hello World</div>, document.getElementById('app'));
