@@ -2,7 +2,6 @@ import React from 'react';
 import ContactList from './contact-list.jsx';
 import ContactDetails from './contact-form.jsx';
 
-
 class AddressBook extends React.Component {
     render() {
         return (
@@ -12,15 +11,15 @@ class AddressBook extends React.Component {
                     <ContactList />
                 </div>
                 <div className="col-md-6">
-                    <h3>Update Contact Details</h3>
+
+                    <button className='btn' id="contact-submit-button" type="submit" value="Save Contact">Save Contact </button>
+                    <h3 class="fiftyPercent">Contact Details</h3>
+
+
                     <div>
                         <ContactDetails />
                     </div>
                 </div>
-
-
-
-
             </div>
 
         );

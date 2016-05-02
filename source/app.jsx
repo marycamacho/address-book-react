@@ -2,15 +2,7 @@ import React from 'react';
 import AddressBook from './jsx/address_book.jsx';
 var ReactDom = require('react-dom');
 
-var initialData = [
-    {
-        fName: "Mary",
-        lName: "Camacho",
-        imgUrl: "http://brainstorminonline.com/wp-content/uploads/2011/12/Mary-Camacho.jpg",
-        email: "mary@marycamacho.com",
-        phone: "303-669-6516"
-    }
-];
+
 ReactDom.render(
 
     <div>

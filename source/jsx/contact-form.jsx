@@ -2,14 +2,12 @@ import React from 'react';
 
 class ContactDetails extends React.Component {
     
-    
-    
+      
     
     render() {
         return (
             <div>
-                <button className='btn' id="contact-submit-button" type="submit" value="Save Contact">Save Contact </button>
-
+                
                 <form id="contact_form"  >
                     <div class="row">
                         <label for="fname">First name:</label><br />
