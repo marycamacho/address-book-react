@@ -1,6 +1,6 @@
 import React from 'react';
 
-class ContactDetails extends React.Component {
+class ContactForm extends React.Component {
     
       
     
@@ -8,35 +8,51 @@ class ContactDetails extends React.Component {
         return (
             <div>
                 
-                <form id="contact_form"  >
-                    <div class="row">
-                        <label for="fname">First name:</label><br />
-                        <input id="firstName" class="input" name="firstName" type="text" value="" size="30" /><br />
+                <form id="contact-form" onSubmit={this._handleSubmit.bind(this)} >
+                    <label className="">Add Contact Details</label>
+                    <div className=" contact-form-fields">
+                        <input id="firstName" className="input" placeholder="First Name:" ref={(input) =>this._fName = input}  /><br />
+
+                        <input id="lastName" className="input" placeholder="Last Name:" ref={(input) =>this._lName = input} /><br />
+
+                        <input id="company" className="input" placeholder="Company:" ref={(input) =>this._company = input} /><br />
+
+                        <input id="email" className="input" placeholder="Email Address:" ref={(input) =>this._email = input} /><br />
+
+                        <input id="phone-number" className="input" placeholder="Phone Number:" ref={(input) =>this._phone = input} /><br />
+
+                        <input id="img-url" className="input" placeholder="Link to Thumbnail Image (URL):" ref={(input) =>this._imgUrl = input}/><br /><br />
                     </div>
-                    <div class="row">
-                        <label for="lname">Last name:</label><br />
-                        <input id="lastName" class="input" name="lastName" type="text" value="" size="30" /><br />
-                    </div>
-                    <div class="row">
-                        <label for="company">Company:</label><br />
-                        <input id="company" class="input" name="company" type="text" value="" size="30" /><br />
-                    </div>
-                    <div class="row">
-                        <label for="email">Email:</label><br />
-                        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-                    </div>
-                    <div class="row">
-                        <label for="phone-number">Phone Number</label><br />
-                        <input id="phone-number" class="input" name="phone-number" rows="7" cols="30"></input><br /><br />
+                    <div className="contact-form-actions">
+                        <button type="submit">
+                            Save Contact
+                        </button>
                     </div>
                 </form>
-
 
             </div>
         );
     }
+
+    _handleSubmit(event) {
+        event.preventDefault();
+
+
+        let fName = this._fName;
+        let lName = this._lName;
+        let company = this._company;
+        let email = this._email;
+        let phone = this._phone;
+        let imgUrl = this._imgUrl;
+
+        this.props.addContact(fName.value, lName.value, company.value, email.value, phone.value, imgUrl.value);
+
+
+    }
+
+
 }
 
 
 
-export default ContactDetails;
+export default ContactForm;

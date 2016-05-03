@@ -102,3 +102,12 @@ ul {
 .fiftyPercent {
     width: 50%;
 }
+
+#contact-form {
+    margin-top: 12%;
+}
+
+.contact-form-fields .input {
+    margin-top: 10px;
+    width: 80%;
+}
